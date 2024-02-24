@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+</head>
+
+<body>
+    <h1>Student Form</h1>
+    <table border="1" cellpadding="2" cellspacing="5">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="student_name"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" id="student_age"></td>
+        </tr>
+        <tr>
+            <td>Gender</td> <td><input type="radio" name="student_gender" value="Male">Male
+            <input type="radio" name="student_gender" value="Female">FeMale</td>
+        </tr>
+        <tr>
+            <td>course</td><td><select id="student_course" style="width: 100%;"><option value="python">Python</option><option value="Javascript">Javascript</option><option value="CSS">CSS</option></select></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" id="student_email"></td>
+        </tr>
+        <tr><td colspan="2"><button id="btn" style="background-color: aqua;color: black;width: 100%;">Save</button></td></tr>
+
+    </table>
+    <br>
+    <br>
+
+    <table border="1" id="insert_table" cellpadding="2" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Name</th><th>Age</th><th>Gender</th><th>Course</th><th>Email</th><th>Action</th>
+            </tr>
+            <tbody id="insert_tablebody">
+
+            </tbody>
+        </thead>
+
+    </table>
+<script src="script.js"></script>
+</body>
+
+</html>
